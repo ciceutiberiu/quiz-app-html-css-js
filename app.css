@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400|Fira+Sans:400");
+
+:root {
+  --background-color: #eff0f3;
+  --button-color: #ff8e3c;
+  --button-text: #0d0d0d;
+  --highlight-color: #ff8e3c;
+  --correct-answer: #00ff00;
+  --wrong-answer: #ff1919;
+  --primary-color: #2a2a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", sans-serif;
+  background-color: var(--background-color);
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.number-and-score {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+.question {
+  text-align: center;
+  margin: 1.25rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+}
+
+.answers-container {
+  line-height: 3;
+}
+
+.answers-container h3 {
+  width: 300px;
+  border: 1px solid var(--highlight-color);
+  margin: 1.25rem 0;
+  padding: 0 3rem;
+  border-radius: 5px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.answers-container h3:hover {
+  background-color: var(--highlight-color);
+}
+
+.highlight {
+  background-color: var(--highlight-color);
+}
+
+.correct-anser {
+  background-color: var(--correct-answer);
+}
+
+.wrong-answer {
+  background-color: var(--wrong-answer);
+}
+
+#submit-btn {
+  width: 300px;
+  padding: 1rem 3rem;
+  background-color: var(--button-color);
+  border: transparent;
+  font-size: 1.1rem;
+  color: var(--button-text);
+  font-family: "Merriweather", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#submit-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+}
+
+.results {
+  text-align: center;
+  border: 1px solid var(--highlight-color);
+  width: 80vw;
+  margin: 1.25rem auto;
+  padding: 2rem 3rem;
+  display: none;
+}
+
+.results h3 {
+  margin: 1.25rem 0;
+}
